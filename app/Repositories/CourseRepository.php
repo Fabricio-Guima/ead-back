@@ -20,7 +20,7 @@ class CourseRepository
 
 	public function getCourse(String $identify)
 	{
-		return $this->entity::find($identify);
+		return $this->entity::findOrFail($identify);
 	}
 
 
