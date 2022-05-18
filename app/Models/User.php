@@ -48,5 +48,10 @@ class User extends Authenticatable
     ];
 
     //método para criar uuid no campo id da tabela user
+
+    public function supports()
+    {
+        return $this->hasMany(Support::class);
+    }
     
 }
